@@ -1,0 +1,1 @@
+export const siteUrl = 'https://sapper-markdown-blog-and-pages-netlify-cms-starter.netlify.app/';
