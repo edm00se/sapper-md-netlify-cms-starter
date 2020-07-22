@@ -1,46 +1,29 @@
 <style>
-	h1, figure, p {
+	.main {
 		text-align: center;
-		margin: 0 auto;
-	}
-
-	h1 {
-		font-size: 2.8em;
-		text-transform: uppercase;
-		font-weight: 700;
-		margin: 0 0 0.5em 0;
-	}
-
-	figure {
-		margin: 0 0 1em 0;
-	}
-
-	img {
-		width: 100%;
-		max-width: 400px;
-		margin: 0 0 1em 0;
-	}
-
-	p {
-		margin: 1em auto;
-	}
-
-	@media (min-width: 480px) {
-		h1 {
-			font-size: 4em;
-		}
 	}
 </style>
 
+<script context="module">
+	import { siteTitle } from '../stores/_config.js';
+	export async function preload() {
+
+		const res = await this.fetch(`undefined.json`);
+		const article = await res.json();
+
+		return { article, siteTitle };
+	}
+</script>
+
+<script>
+	export let article;
+	export let siteTitle;
+</script>
+
 <svelte:head>
-	<title>Sapper Markdown Blog and Pages Netlify CMS Starter</title>
+	<title>{siteTitle}</title>
 </svelte:head>
 
-<h1>Great success!</h1>
-
-<figure>
-	<img alt='Success Kid' src='successkid.jpg'>
-	<figcaption>Have fun with Sapper!</figcaption>
-</figure>
-
-<p><strong>Try editing this file (src/routes/index.svelte) to test live reloading.</strong></p>
+<div class="main">
+	{@html article.html}
+</div>
