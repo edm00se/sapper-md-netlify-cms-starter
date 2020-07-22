@@ -30,7 +30,9 @@ const renderHeadingWithAnchor = (slug) => (text, level) => {
 export function getPost(slug) {
 
   const file = `${WHERE_ALL_THE_MARKDOWN_BLOG_POSTS_ARE}/${slug}.md`;
-  if (!fs.existsSync(file)) return null;
+  if (!fs.existsSync(file)) {
+    return null;
+  }
 
   const markdown = fs.readFileSync(file, 'utf-8');
 
