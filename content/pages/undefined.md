@@ -6,7 +6,7 @@ title: Sapper Markdown Blog and Pages Netlify CMS Starter
 
 # Great success!
 
-| ![Success Kid](successkid.jpg) | 
+| ![Success Kid](/images/successkid.jpg) | 
 |:--:| 
 | *Have fun with Sapper!* |
 
