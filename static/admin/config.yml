@@ -1,7 +1,7 @@
 backend:
   name: github
   repo: edm00se/sapper-markdown-blog-and-pages-netlify-cms-starter
-  branch: master # Branch to update (optional; defaults to master)
+  branch: main # Branch to update (optional; defaults to master)
 
 publish_mode: editorial_workflow # Allows you to save drafts before publishing them
 media_folder: static/images # Media files will be stored in the repo under static/images

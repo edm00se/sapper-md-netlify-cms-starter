@@ -39,6 +39,14 @@ Open up [localhost:3000](http://localhost:3000) and start clicking around.
 
 Consult [sapper.svelte.dev](https://sapper.svelte.dev) for help getting started.
 
+### Make It Your Own
+
+You should at a minimum update:
+
+- the `name` and  `description` fields in `package.json`
+- the `backend`'s `repo` and `branch` fields in `static/admin/config.yml` to ensure the netlify cms changes go the correct destination
+- the `siteUrl` and `siteTitle` in `src/stores/_config.js`
+
 
 ## Structure
 
