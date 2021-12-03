@@ -1,3 +1,7 @@
+## Archival Update
+
+This repo is being archived as [sveltekit](https://kit.svelte.dev/) should be used in favor of sapper as of this writing. 
+
 # sapper-md-netlify-cms-starter
 
 ## [![Netlify Status](https://api.netlify.com/api/v1/badges/2ad49513-ef65-4023-999f-1ad64bf08818/deploy-status)](https://app.netlify.com/sites/sapper-md-netlify-cms-starter/deploys)
